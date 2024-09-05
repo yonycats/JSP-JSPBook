@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>JSPBook</display-name>
+  
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+
+
+<!-- CH10 기본 인증 처리 방법으로 보안 처리하기  -->
+<!-- <security-role>
+	<role-name>role1</role-name>
+</security-role>
+
+<security-role>
+ 	<role-name>tomcat</role-name>
+</security-role>
+
+<security-constraint>
+	<web-resource-collection>
+		<web-resource-name>JSPBook</web-resource-name>
+		<url-pattern>/ch10/security01.jsp</url-pattern>
+		<http-method>GET</http-method>
+	</web-resource-collection> 
+	
+	<auth-constraint>
+		<description>설명</description>
+		<role-name>role1</role-name>
+	</auth-constraint>
+</security-constraint>
+
+<login-config>
+	<auth-method>BASIC</auth-method>
+</login-config> -->
+<!-- CH10 기본 인증 처리 방법으로 보안 처리하기 end   -->
+
+  
+  
+
+
+<!-- CH10 FORM 기반 처리 방법으로 보안 처리하기 -->
+<!-- <security-role>
+	<role-name>role1</role-name>  
+</security-role>
+  
+<security-role>
+	<role-name>tomcat</role-name>  
+</security-role>
+  
+<security-constraint>
+	<web-resource-collection>
+		<web-resource-name>JSPBook</web-resource-name>  
+  		<url-pattern>/ch10/security01.jsp</url-pattern>
+  		<http-method>GET</http-method>
+	</web-resource-collection>
+	
+	<auth-constraint>
+		<description>설명</description>	
+		<role-name>role1</role-name>
+		<role-name>tomcat</role-name>
+	</auth-constraint>
+</security-constraint>
+
+<login-config>
+	<auth-method>FORM</auth-method>
+	<form-login-config>
+		<form-login-page>/ch10/login.jsp</form-login-page>  
+  		<form-error-page>/ch10/login_failed.jsp</form-error-page>
+	</form-login-config>
+</login-config> -->
+<!-- CH10 FORM 기반 처리 방법으로 보안 처리하기 end -->  
+
+
+
+
+
+<!-- CH10 프로그래밍적 시큐리티 처리하기 -->
+<!-- <security-role> -->
+<!-- 	<role-name>role1</role-name>   -->
+<!-- </security-role> -->
+  
+<!-- <security-role> -->
+<!-- 	<role-name>tomcat</role-name>   -->
+<!-- </security-role> -->
+  
+<!-- <security-constraint> -->
+<!-- 	<web-resource-collection> -->
+<!-- 		<web-resource-name>JSPBook</web-resource-name>   -->
+<!--   		<url-pattern>/ch10/security02.jsp</url-pattern> -->
+<!--   		<http-method>GET</http-method> -->
+<!-- 	</web-resource-collection> -->
+	
+<!-- 	<auth-constraint> -->
+<!-- 		<description>설명</description>	 -->
+<!-- 		<role-name>role1</role-name> -->
+<!-- 		<role-name>tomcat</role-name> -->
+<!-- 	</auth-constraint> -->
+<!-- </security-constraint> -->
+
+<!-- <login-config> -->
+<!-- 	<auth-method>FORM</auth-method> -->
+<!-- 	<form-login-config> -->
+<!-- 		<form-login-page>/ch10/login.jsp</form-login-page>   -->
+<!--   		<form-error-page>/ch10/login_failed.jsp</form-error-page> -->
+<!-- 	</form-login-config> -->
+<!-- </login-config> -->
+<!-- CH10 FORM 기반 처리 방법으로 보안 처리하기 end -->  
+  
+
+
+<!-- ch10_test 문제 시, 사용할 시큐리티 설정 -->
+<!-- <security-role>
+	<role-name>user</role-name>  
+</security-role>
+  
+<security-role>
+	<role-name>adm</role-name>  
+</security-role>
+  
+<security-role>
+	<role-name>all</role-name>  
+</security-role>
+  
+<security-constraint>
+	<web-resource-collection>
+		<web-resource-name>JSPBook</web-resource-name>  
+  		<url-pattern>/ch10/ch10_test_process.jsp</url-pattern>
+  		<http-method>GET</http-method>
+	</web-resource-collection>
+	
+	<auth-constraint>
+		<description>설명</description>	
+		<role-name>user</role-name>
+		<role-name>adm</role-name>
+		<role-name>all</role-name>
+	</auth-constraint>
+</security-constraint>
+
+<login-config>
+	<auth-method>FORM</auth-method>
+	<form-login-config>
+		<form-login-page>/ch10/ch10_test_authForm.jsp</form-login-page>  
+  		<form-error-page>/ch10/ch10_test_failed.jsp</form-error-page>
+	</form-login-config>
+</login-config> -->
+<!-- ch10_test 문제 시, 사용할 시큐리티 설정 end -->
+
+
+
+
+
+<!-- JSP 페이지에서 발생하는 오류가 web.xml 파일에 설정된 오류 코드와 일치하는 경우 오류 코드와 오류 페이지를 보여줌 -->
+<!-- 11장 예외처리 : error code를 이용한 예외처리 -->
+<!-- <error-page>
+	<error-code>500</error-code> 					인식할 오류코드
+	<location>/ch11/errorCode_error.jsp</location>	오류 페이지의 URI
+</error-page> -->
+
+<!-- 11장 예외처리 : exception code를 이용한 예외처리 -->
+<!-- <error-page>
+	<exception-type>java.lang.Exception</exception-type>	인식할 오류코드
+	<location>/ch11/exceptionType_error.jsp</location>		오류 페이지의 URI
+</error-page> -->
+
+
+
+
+
+
+<!-- ch11_test 문제 시, 사용할 시큐리티와 예외처리 설정 -->
+
+<!-- <security-role>
+	<role-name>admin</role-name>  
+</security-role>
+
+<security-constraint>
+	<web-resource-collection>
+		<web-resource-name>JSPBook</web-resource-name>  
+  		<url-pattern>/ch11/test/boardForm.jsp</url-pattern>
+  		<url-pattern>/ch11/test/boardUpdateForm.jsp</url-pattern>
+  		<url-pattern>/ch11/test/boardRemove.jsp</url-pattern>
+  		<http-method>GET</http-method>
+	</web-resource-collection>
+	
+	<auth-constraint>
+		<description>설명</description>	
+		<role-name>admin</role-name>
+	</auth-constraint>
+</security-constraint>
+
+<login-config>
+	<auth-method>FORM</auth-method>
+	<form-login-config>
+		<form-login-page>/ch11/test/loginSecurity.jsp</form-login-page>  
+  		<form-error-page>/ch11/test/loginFailed.jsp</form-error-page>
+	</form-login-config>
+</login-config>
+
+<error-page>
+	<error-code>403</error-code>
+	<location>/ch11/test/errorPage.jsp</location>
+</error-page> -->
+
+<!-- ch11_test 문제 시, 사용할 시큐리티와 예외처리 설정  end -->
+
+
+
+
+
+<!-- ch12 필터 / AuthenFilter 작성 -->
+<filter>
+	<filter-name>Filter01</filter-name>
+	<filter-class>kr.or.ddit.ch12.AuthenFilter</filter-class>
+</filter>
+	
+<filter-mapping>
+	<filter-name>Filter01</filter-name>
+	<url-pattern>/ch12/filter01_process.jsp</url-pattern>
+</filter-mapping>
+<!-- ch12 필터 / AuthenFilter 작성 end -->
+
+<!-- ch12 필터 / InitParamFilter 작성 -->
+<filter>
+	<filter-name>Filter02</filter-name>
+	<filter-class>kr.or.ddit.ch12.InitParamFilter</filter-class>
+	
+	<init-param>
+		<param-name>param1</param-name>
+		<param-value>admin</param-value>
+	</init-param>
+	<init-param>
+		<param-name>param2</param-name>
+		<param-value>1234</param-value>
+	</init-param>
+</filter>
+	
+<filter-mapping>
+	<filter-name>Filter02</filter-name>
+	<url-pattern>/ch12/filter02_process.jsp</url-pattern>
+</filter-mapping>
+<!-- ch12 필터 / InitParamFilter 작성 end -->
+
+<!-- ch12 필터 / LogFileFilter 작성 -->
+<filter>
+	<filter-name>Filter02_2</filter-name>
+	<filter-class>kr.or.ddit.ch12.LogFileFilter</filter-class>
+	
+	<init-param>
+		<param-name>filename</param-name>
+		<param-value>c:\\logs\\monitor.log</param-value>
+	</init-param>
+</filter>
+	
+<filter-mapping>
+	<filter-name>Filter02_2</filter-name>
+	<!-- 아래 url로 들어오는 작업을 할 때, 로그를 남길 것임 -->
+	<url-pattern>/ch12/filter02_process.jsp</url-pattern>
+</filter-mapping>
+<!-- ch12 필터 / LogFileFilter 작성 end -->
+
+
+
+
+
+
+<!-- ch12_test 문제 시, 사용할 시큐리티와 필터 설정 -->
+<security-role>
+	<role-name>admin</role-name>
+</security-role>
+
+<security-constraint>
+	<web-resource-collection>
+		<web-resource-name>JSPBook</web-resource-name>
+		<url-pattern>/ch12/ch12_test.jsp</url-pattern>
+		<http-method>GET</http-method>
+	</web-resource-collection>
+	
+	<auth-constraint>
+		<description>ch12_test.jsp에 접근할 수 있는 권한</description>
+		<role-name>admin</role-name>
+	</auth-constraint>
+</security-constraint>
+
+<login-config>
+	<auth-method>FORM</auth-method>
+	<form-login-config>
+		<form-login-page>/ch12/ch12_test_loginSecurity.jsp</form-login-page>
+		<form-error-page>/ch12/ch12_test_loginFailed.jsp</form-error-page>
+	</form-login-config>
+</login-config>
+
+
+<filter>
+	<filter-name>LoginFilter</filter-name>
+	<filter-class>kr.or.ddit.ch12.LoginFilter</filter-class>
+	
+	<init-param>
+		<param-name>role</param-name>
+		<param-value>admin</param-value>
+	</init-param>
+</filter>
+
+<filter-mapping>
+	<filter-name>LoginFilter</filter-name>
+	<!-- 아래 url로 들어오는 작업을 할 때, 로그를 남길 것임 -->
+	<url-pattern>/ch12/ch12_test.jsp</url-pattern>
+</filter-mapping>
+<!-- ch12_test 문제 시, 사용할 시큐리티와 필터 설정  end -->
+
+</web-app>
